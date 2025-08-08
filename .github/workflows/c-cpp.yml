@@ -26,9 +26,11 @@ jobs:
     - name: verify format
       run : make format-verify
     # MISSING build for simu:  no X11 on headless github serves
-    - name: make simple
+    - name: Documentation
+      run : make doc
+    - name: simple led strip build
       run : make simple
-    - name: make cct
+    - name: cct led strip build
       run : make cct
-    - name: make indexable
+    - name: indexable led strip build
       run : make indexable
